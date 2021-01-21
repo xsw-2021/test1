@@ -1,0 +1,655 @@
+'''
+n=1
+count=0
+while n<=100:
+    count=count+n
+    n=n+1
+print(count)
+'''
+
+# name=input("输入名字：")
+# age=input("输入年龄：")
+# job=input("输入工作：")
+#
+# msg='''-------------info of %s------------
+# name:%s
+# age:%s
+# job:%s
+# -----------------------end----------------
+# '''%(name,name,age,job)
+# print(msg)
+
+# msg='我叫%s,今年%s,学习进度为1%%'%("许淑雯",22)
+# print(msg)
+
+# count=1
+# while count<=3:
+#     num=int(input("输入数字："))
+#     if num==66:
+#         print("对了")
+#         break
+#     elif num > 66:
+#         print ('结果大了')
+#     else:
+#         print('结果小了')
+#     count+=1
+# else:
+#     print('你太笨了')
+
+# count = 1
+# while count < 11:
+#     if count == 7:
+#         pass
+#     else:
+#         print(count)
+#     count+=1
+
+# count=1
+# s=0
+# while count<100:
+#     if count %2==0:
+#         s=s-count
+#     else :
+#         s=s+count
+#     count=count+1
+# print(s)
+
+# count=1
+# while count<=3:
+#     usename=input('输入用户名:')
+#     password=input('输入密码:')
+#     if usename=='xsw' and password=='123':
+#         print('登陆成功')
+#         break
+#     else:
+#         print('还剩%s次机会'%(3-count))
+#     count+=1
+
+# i=42
+# print(i.bit_length())
+
+# s1=' '
+# print(bool(s1))
+
+# usename=input('输入用户名：')
+# password=input('输入密码：')
+# code='qwer'
+# print(code)
+# your_code=input('输入验证码：')
+# if your_code.upper()==code.upper():
+#     if usename=='xsw' and password=='123':
+#         print('登陆成功')
+#     else:
+#         print('用户名或密码错误')
+# else:
+#     print('验证码错误')
+
+# s=':zzz:xxx:ccc'
+# l=s.split(':')
+# print(l)
+
+# s1='qwertyuiop1234567890'
+# n=0
+# while n<=19:
+#     print(s1[n])
+#     n+=1
+
+
+# s1='qwertyuiop1234567890'
+# print(len(s1))
+# n=0
+# while n<=len(s1):
+#     print(s1[n])
+#     n+=1
+
+# s1='qwertyuiop1234567890'
+# for i in s1:
+#     print(i)
+
+# s='qwerty'
+# for i in s:
+#     print(i)
+
+# s='321'
+# for i in s:
+#     print('倒计时%ss'%(i))
+# print('出发！')
+
+#li=[100,'xsw',True,[123]]
+#print(li[3],type(li[3]))
+#print(li[:2])
+#li.append('许淑雯')
+#print(li)
+# while 1:
+#     name=input('输入姓名：')
+#     if name.upper()=='Q':
+#         break
+#     li.append(name)
+# print(li)
+# li.insert(3,'许淑雯')
+# print(li)
+# li.extend(['asdfg'])
+# print
+
+# li=[100,'xsw',True,[123],'许淑雯','xsw']
+# # li.pop()
+# # print(li)
+# li.remove('xsw')
+# print(li)
+
+#l1=[1,2,'xsw',[1,2,'qwe']]
+# l1[2]=l1[2].upper()
+# print(l1)
+# l1[-1].append('xsw')
+# print(l1)
+# l1[-1][-1]=l1[-1][-1]+'zxc'
+# print(l1)
+
+# tu=(1,2,'xsw',[1,2,'qwe'])
+# print(len(tu))
+# tu[-1].append(123)
+# print(tu)
+
+# r=range(10)
+# print(r)
+# for i in r:
+#     print(i)
+# print(r[1])
+
+# for i in range(100,0,-1):
+#     print(i)
+
+# l1=[1,2,3,'xsw','许淑雯']
+# for i in range(len(l1)):
+#     print(i)
+
+# l1=range(5)
+# print(l1[1:3])
+# print(l1[-1])
+# for i in range(1,5,-1):
+#     print(i)
+
+# content=input('输入内容：')
+# l1=content.split('+')
+# print(l1)
+# result=int(l1[0].strip())+int(l1[1].strip())
+# print(result)
+# result=0
+# for i in l1:
+#     result=result+int(i)
+# print(result)
+
+# content=input('输入内容：')
+# result=0
+# for i in content:
+#     # print(i,type(i))
+#     if i.isdecimal():
+#         result+=1
+# print(result)
+
+# count=1
+# s=0
+# while count<100:
+#     if count %2==0:
+#         if count==88:
+#             pass
+#         else:
+#             s=s-count
+#     else :
+#         s=s+count
+#     count=count+1
+# print(s)
+
+# content=input('输入：')
+# if content==content[::-1]:
+#     print('是回文')
+# else:
+#     print('不是回文')
+
+# l1=['sdf','we','wert']
+# s='_'.join(l1)
+# print(s)
+# s=''
+# for i in l1:
+#     s=s+'_'+i
+# print(s[1:])
+
+#dic=dict((('one',1),('two',2),('three',3)))
+# dic=dict(one=1,two=2,three=3)
+# print(dic)
+
+# dic={'name':'许淑雯','age':22}
+# dic['name']='xsw'
+# print(dic)
+# dic.setdefault('hobby','run')
+# print(dic)
+
+# dic = {'name':'许淑雯', 'age':22,'hobby':'run'}
+# print(list(dic.values()))
+# for value in dic.values():
+#     print(value)
+# print(dic.items())
+# for i in dic.items():
+#     print(i)
+
+# dic = {
+#     'name':'汪峰',
+#     'age':48,
+#     'wife':[{'name':'国际章','age':38}],
+#     'children':{'girl_first':'小苹果','girl_second':'小怡','girl_three':'顶顶'}
+# }
+# name=dic['name']
+# print(name)
+# l1=dic['wife'][0]
+# print(l1)
+# l1=dic['wife'][0]
+# wife_name=l1['name']
+# print(wife_name)
+# l1=dic['children']['girl_three']
+# print(l1)
+
+# li=["TaiBai ","alexC","AbC","egon","riTiAn","WuSie"," aqc"]
+# new_l=[]
+# for i in li:
+#     new_i=i.strip()
+#     if new_i.upper().startswith('A') and new_i.endswith('c'):
+#         new_l.append(new_i)
+#         print(new_l)
+# for i in new_l:
+#     print(i)
+
+# li=['qwe','asd','zxc','poi','lkj','mnb']
+# comment_li=[]
+# comment=input('输入内容：')
+# for i in li:
+#     if i in comment:
+#         comment=comment.replace(i,'*'*len(i))
+# comment_li.append(comment)
+# print(comment_li)
+
+# msg = 'k:1|k1:2|k2:3|k3:4'
+# l1 = msg.strip().split('|')
+# dic={}
+# for i in l1:
+#     key,value=i.split(':')
+#     dic[key.strip()]=int(value)
+# print(dic)
+
+# i=1000
+# i1=1000
+# print(i is i1)
+
+# s1=set()
+# print(s1,type(s1))
+
+# set1 = {1,2,3,4,5}
+# set2 = {4,5,6,7,8}
+# print(set1 & set2)
+# print(set1 | set2)
+# print(set1 - set2)
+# print(set2 ^ set1)
+
+# set1 = {1,2,3}
+# set2 = {1,2,3,4,5,6}
+# print(set1 < set2)
+# print(set2 > set1)
+
+# l1=[1,1,2,2,2,2,3,4,5,6,6,6]
+# l1=set(l1)
+# l1=list(l1)
+# print(l1)
+
+# l1=[1,2,3,[22,33]]
+# l2=l1
+# l1.append(666)
+# print(l1,id(l1))
+# print(l2,id(l2))
+
+# l1=[1,2,3,[22,33]]
+# l2=l1.copy()
+# l1[-1].append(777)
+# print(l1,id(l1[-1]))
+# print(l2,id(l2[-1]))
+
+# import copy
+# l1=[1,2,3,[22,33]]
+# l2=copy.deepcopy(l1)
+# l1[-1].append(777)
+# print(l1,id(l1[-1]))
+# print(l2,id(l2[-1]))
+
+# l1=[1,2,3,[22,33]]
+# l2=l1[:]
+# l1[-1].append(777)
+# print(l1)
+# print(l2)
+
+# v={}
+# for index in range(10):
+#     v['user']=index
+# print(v)
+
+# good = [
+#     {'name':'电脑','price':'1999'},
+#     {'name':'鼠标','price':'10'},
+#     {'name':'键盘','price':'20'},
+#     {'name':'相机','price':'998'},
+# ]
+# n=1
+# for i in good:
+#     print(n,i['name'],i['price'])
+#     n+=1
+
+# for i in range(len(good)):
+#     print(i+1,good[i]['name'],good[i]['price'])
+# while 1:
+#     for num,dic in enumerate(good):
+#         print('{}\t{}\t{}'.format(num+1,dic['name'],dic['price']))
+#     choice_num=input('输入序号:').strip()
+#     if choice_num.isdecimal():
+#         choice_num=int(choice_num)
+#         if 0 < choice_num < len(good):
+#             print('您选择的商品名为{},价格为{}'.format(good[choice_num-1]['name'],good[choice_num-1]['price']))
+#         else:
+#             print('您输入的序号超出范围，请重新输入：')
+#     elif choice_num.upper() == 'Q':
+#         break
+#     else:
+#         print('您输入的不是序号，请重新输入：')
+
+# l1=[]
+# while 1:
+#     content=input('输入：')
+#     if content.upper()=='N':
+#         break
+#     else:
+#         l1.append(content)
+# print(l1)
+
+# l1=[]
+# while 1:
+#     username=input('输入用户名：')
+#     if username.upper() == 'N':break
+#     password=input('输入密码：')
+#     dic={'username':username,'password':password}
+#     l1.append(dic)
+# print(l1)
+
+# v1= {'k1':'v1','k2':[1,2,3]}
+# v2= {'k1':'v1','k2':[1,2,3]}
+# result1=v1==v2
+# result2=v1 is v2
+# print(result1)
+# print(result2)
+# print(id(v1))
+# print( id(v2))
+
+# v1='xsw'
+# v2=[1,2,3,4,v1]
+# v1='许淑雯'
+# print(v2)
+
+# info=[1,2,3]
+# user_list=[]
+# for item in range(10):
+#     user_list.append(info)
+# info[1]='xsw'
+# print(user_list)
+
+# data_list=[]
+# for i in range(10):
+#     data = {}
+# data['user']=i
+# data_list.append(data)
+# print(data)
+
+# data_list=[]
+# for i in range(10):
+#     data = {}
+#     data['user']=i
+#     data_list.append(data)
+# print(data_list)
+
+# s1='XushuWen'
+# print(s1.capitalize())
+# print(s1.swapcase())
+# s1='Xu shu Wen'
+# print(s1.title())
+#print(s1.center(20,'*'))
+# print(s1.find('W'))
+# print(s1.find('W'))
+
+# l1=[11,22,33,44,55]
+# del l1[1::2]
+# print(l1)
+
+# l1=[11,22,33,44,55]
+# for i in range(len(l1)-1,-1,-1):
+#     if i % 2 ==1:
+#         l1.pop(i)
+# print(l1)
+
+# l1=[11,22,33,44,55]
+# new_l1=[]
+# for i in range(len(l1)):
+#     if i % 2 ==0:
+#         new_l1.append(l1[i])
+# l1=(new_l1)
+# print(l1)
+
+# dic={'k1':'xsw','k2':'wsx','k3':'qwer','age':'22'}
+# l1=[]
+# for key in dic:
+#     if 'k' in key:
+#         l1.append(key)
+# # print(l1)
+# for i in l1:
+#     dic.pop(i)
+# print(dic)
+
+# dic={'k1':'xsw','k2':'wsx','k3':'qwer','age':'22'}
+# for key in list(dic.keys()):
+#     if 'k' in key:
+#         dic.pop(key)
+# print(dic)
+
+# import copy
+# v1=[1,2,3,4,5]
+# v2=copy.copy(v1)
+# v3=copy.deepcopy(v1)
+# print(v1[0] is v2[0])
+# print(v1[0] is v3[0])
+# print(v2[0] is v3[0])
+
+# f1=open(r'D:\t1.txt',encoding='utf-8',mode='r')
+# content=f1.read()
+# print(content)
+# f1.close()
+
+# f1=open('t1',encoding='utf-8')
+# content=f1.read()
+# print(content,type(content))
+# f1.close()
+
+# f1 = open('t1',encoding='utf-8')
+# for line in f1 :
+#     print(line)
+# f1.close()
+
+# f1 = open('t2',encoding='utf-8',mode='w')
+# f1.write('dfvcbgsrfdvc')
+# f1.close()
+
+# f1 = open('t2',encoding='utf-8',mode='r+')
+# content=f1.read()
+# print(content)
+# f1.write('人间')
+# f1.close()
+
+# with open('t1',encoding='utf-8')as f1,\
+#         open('t2',encoding='utf-8')as f2:
+#     print(f1.read())
+#     f2 .write('adsfgeras学生')
+
+# import os
+# with open('t1',encoding='utf-8') as f1,\
+#     open('t3',encoding='utf-8',mode='w') as f2:
+#     old=f1.read()
+#     new=old.replace('许淑雯','xsw')
+#     f2.write(new)
+# os.remove('t1')
+# os.rename('t3','t1')
+
+# import os
+# with open('t1',encoding='utf-8') as f1,\
+#     open('t3',encoding='utf-8',mode='w') as f2:
+#     for line in f1:
+#         new_line=line.replace('xsw','许淑雯')
+#         f2.write(new_line)
+# os.remove('t1')
+# os.rename('t3','t1')
+
+# l1=[]
+# for i in range(3):
+#     l1.append(['_']*3)
+# print(l1)
+
+# num=input('输入三位数字：')
+# count=0
+# if num.isdecimal():
+#     for i in num:
+#         count+=int(i)**3
+#     if count==int(num):
+#         print('是水仙花数')
+#     else:
+#         print('不是水仙花数')
+# else:
+#     print('请输入数字！')
+
+# l1=['周一','周二','周三','周四','星期五']
+# for i in range(len(l1)-1,-1,-1):
+#     if l1[i].strip()[0]=='周':
+#         l1.pop(i)
+# print(l1)
+
+cars=['鲁A32444','鲁B12333','京B8989M',\
+      '黑C49678','黑C46555','沪B25041',]
+locals={'沪':'上海','黑':'黑龙江','鲁':'山东',\
+        '鄂':'湖北','湘':'湖南','京':'北京',}
+# dic={}
+# for i in cars:
+#     if locals[i[0]] not in dic:
+#         dic[locals[i[0]]]=1
+#     else:
+#         dic[locals[i[0]]]=dic[locals[i[0]]]+1
+# print(dic)
+
+# dic={}
+# for i in cars:
+#     dic[locals[i[0]]]=dic.get(locals[i[0]],0)+1
+# print(dic)
+
+# def compile(a,b):
+#     if a>b:
+#         return a
+#     else:
+#         return b
+# print(compile(100,6))
+
+# def func():
+#     count=1
+#     while 1:
+#         count+=1
+#         print(count)
+#         return
+# print(func())
+
+# def fuc(dic):
+#     dict1 = {}
+#     for key,value in dic.items():
+#         dict1[key]=value[:2]
+#         return dict1
+
+# def register(n, s, a, e):
+#     with open('student_msg', encoding='utf-8', mode='a') as f1:
+#         f1.write('{}|{}|{}|{}\n'.format(n, s, a, e))
+#
+# while 1:
+#     name = input('输入名字：')
+#     if name.upper() == 'Q': break
+#     sex=input('输入性别：')
+#     age=input('输入年龄')
+#     edu=input('输入学历：')
+#     register(name,sex,age,edu)
+
+# import os
+# def file(path,old_content,new_content):
+#     with open(path,encoding='utf-8') as f1,\
+#         open(path+'.bak',encoding='utf-8',mode='w') as f2:
+#         for line in f1:
+#             new_line=line.replace(old_content,new_content)
+#             f2.write(new_line)
+#     os.remove(path)
+#     os.rename(path+'.bak',path)
+# file('t1','许淑雯','xsw')
+# file('t1','22','18')
+
+# def eat(*name):
+#     print('我请你吃：',name)
+# eat('零食','dangao','xiaochi','haochide')
+
+# a=10
+# b=20
+# def test(a,b):
+#     a=3
+#     b=5
+#     print(a,b)
+# c=test(b,a)
+# print(c)
+
+# def func():
+#     l1=[1,2,3,4]
+#     yield from l1
+# ret=func()
+# print(next(ret))
+
+# l1=[i for i in range(1,100)]
+# print(l1)
+
+# l1=[i for i in range(2,11)]+list('JQKA')
+# print(l1 )
+
+# list1=['jay','jj','meet']
+# list2=['周杰伦','林俊杰','元宝']
+# dic={list2[i]:list1[i] for i in range(len(list1))}
+# print(dic)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
